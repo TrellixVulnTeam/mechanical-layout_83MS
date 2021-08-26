@@ -1,0 +1,41 @@
+.lectures {
+  display: grid;
+  //   grid-template-rows: repeat(auto-fit, max-content);
+  grid-template-columns: repeat(4, minmax(10rem, 26.2rem));
+  gap: 2rem;
+}
+
+.lecture {
+  //   grid-row: 2 / 3;
+  background-color: $whiteColor;
+  box-shadow: 0 0.2rem 0.5rem rgba($blackColor, 0.1);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    color: black;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__details {
+    padding: 1.5rem;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    // padding: 0.2rem 0;
+  }
+
+  &__time {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $grayColor;
+    // line-height: 1.7;
+  }
+}

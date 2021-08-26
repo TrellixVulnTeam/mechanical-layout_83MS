@@ -1,18 +1,29 @@
 .courses {
   display: grid;
-  grid-template-rows: max-content;
   grid-template-columns: repeat(3, minmax(10rem, 35rem));
-  column-gap: 2rem;
-
-  justify-content: center;
-  align-self: center;
+  column-gap: 3rem;
 }
 
 .course {
-  grid-row: 2 /3;
+  grid-row: 2 / 3;
   background-color: $whiteColor;
+  box-shadow: 0 0.2rem 1rem rgba($blackColor, 0.2);
   border-radius: 0.7rem;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden;
+
+  &:visited,
+  &:link,
+  a {
+    text-decoration: none;
+    color: $darkGrayColor;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    color: black;
+  }
 
   &__image {
     width: 100%;

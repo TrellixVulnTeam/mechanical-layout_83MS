@@ -15,7 +15,7 @@ body {
 
 .container-home {
   display: grid;
-  grid-template-rows: 60vh repeat(6, 1fr);
+  grid-template-rows: 60vh max-content repeat(5, min-content);
   grid-template-columns: repeat(8, 1fr); }
 
 .titles {
@@ -28,6 +28,14 @@ body {
 .heading__title {
   font-size: 3rem;
   color: white; }
+  .heading__title--pad {
+    padding-bottom: 4rem; }
+
+.heading__title-dark {
+  font-size: 3rem;
+  color: black; }
+  .heading__title-dark--pad {
+    padding-bottom: 3rem; }
 
 .heading__subtitle {
   font-size: 1.8rem;
@@ -66,17 +74,24 @@ body {
 
 .courses {
   display: grid;
-  grid-template-rows: max-content;
   grid-template-columns: repeat(3, minmax(10rem, 35rem));
-  column-gap: 2rem;
-  justify-content: center;
-  align-self: center; }
+  column-gap: 3rem; }
 
 .course {
-  grid-row: 2 /3;
+  grid-row: 2 / 3;
   background-color: white;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 0.7rem;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden; }
+  .course:visited, .course:link,
+  .course a {
+    text-decoration: none;
+    color: #464646; }
+  .course:hover {
+    transform: translateY(-0.5rem);
+    color: black; }
   .course__image {
     width: 100%; }
   .course__details {
@@ -87,6 +102,32 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     padding: 2rem 0; }
+
+.lectures {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 26.2rem));
+  gap: 2rem; }
+
+.lecture {
+  background-color: white;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden; }
+  .lecture:hover {
+    transform: translateY(-0.5rem);
+    color: black; }
+  .lecture__image {
+    width: 100%; }
+  .lecture__details {
+    padding: 1.5rem; }
+  .lecture__heading {
+    font-size: 1.6rem; }
+  .lecture__time {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: gray; }
 
 .section-herohome {
   background-image: url("./../img/hero/hero-sky.jpg");
@@ -104,16 +145,17 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
   justify-content: center;
   align-content: center;
   padding: 5rem 0; }
 
 .section-lectures {
-  background-color: green;
   grid-row: 3 / 4;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0; }
 
 .section-offer {
   background-color: blue;

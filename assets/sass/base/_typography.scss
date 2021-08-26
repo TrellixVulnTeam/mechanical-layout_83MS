@@ -11,6 +11,19 @@
   &__title {
     font-size: 3rem;
     color: $whiteColor;
+
+    &--pad {
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__title-dark {
+    font-size: 3rem;
+    color: $blackColor;
+
+    &--pad {
+      padding-bottom: 3rem;
+    }
   }
 
   &__subtitle {

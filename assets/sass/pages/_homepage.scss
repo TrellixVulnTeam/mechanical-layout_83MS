@@ -20,10 +20,6 @@
   grid-column: 1 / -1;
 
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  // gap: 2rem;
-
   justify-content: center;
   align-content: center;
 
@@ -31,9 +27,14 @@
 }
 
 .section-lectures {
-  background-color: green;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  padding: 5rem 0;
 }
 
 .section-offer {
