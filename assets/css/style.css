@@ -56,6 +56,24 @@ body {
 .padd__highpaddvert {
   padding: 7rem 0; }
 
+.padd__lowpaddtop {
+  padding-top: 1rem; }
+
+.padd__medpaddtop {
+  padding-top: 4rem; }
+
+.padd__highpaddtop {
+  padding-top: 7rem; }
+
+.padd__lowpaddbott {
+  padding-bottom: 1rem; }
+
+.padd__medpaddbott {
+  padding-bottom: 4rem; }
+
+.padd__highpaddbott {
+  padding-bottom: 7rem; }
+
 .herohome {
   text-align: center;
   color: white; }
