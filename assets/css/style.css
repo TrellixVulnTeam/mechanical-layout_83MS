@@ -18,9 +18,22 @@ body {
   grid-template-rows: 60vh repeat(6, 1fr);
   grid-template-columns: repeat(8, 1fr); }
 
+.titles {
+  text-align: center; }
+
 .heading__headingone {
   font-size: 6rem;
   font-weight: 800; }
+
+.heading__title {
+  font-size: 3rem;
+  color: white; }
+
+.heading__subtitle {
+  font-size: 1.8rem;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 4rem; }
 
 .herohome {
   text-align: center;
@@ -51,6 +64,30 @@ body {
     .herohome__cta:focus {
       outline: none; }
 
+.courses {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(3, minmax(10rem, 35rem));
+  column-gap: 2rem;
+  justify-content: center;
+  align-self: center; }
+
+.course {
+  grid-row: 2 /3;
+  background-color: white;
+  border-radius: 0.7rem;
+  overflow: hidden; }
+  .course__image {
+    width: 100%; }
+  .course__details {
+    padding: 3rem; }
+  .course__heading {
+    font-size: 2.2rem; }
+  .course__description {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 2rem 0; }
+
 .section-herohome {
   background-image: url("./../img/hero/hero-sky.jpg");
   background-size: cover;
@@ -63,9 +100,15 @@ body {
   align-content: center; }
 
 .section-courses {
-  background-color: orange;
+  background: linear-gradient(to right, #81358a 0%, #81358a 20%, #27348b 100%, #27348b 80%);
   grid-row: 2 / 3;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0; }
 
 .section-lectures {
   background-color: green;

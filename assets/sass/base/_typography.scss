@@ -1,6 +1,22 @@
+.titles {
+  text-align: center;
+}
+
 .heading {
   &__headingone {
     font-size: 6rem;
     font-weight: 800;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: $whiteColor;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    color: $whiteColor;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
   }
 }

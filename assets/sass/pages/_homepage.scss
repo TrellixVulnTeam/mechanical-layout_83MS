@@ -9,14 +9,25 @@
   grid-column: 1 / -1;
 
   display: grid;
+
   justify-content: center;
   align-content: center;
 }
 
 .section-courses {
-  background-color: orange;
+  background: $primaryGradient;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  // gap: 2rem;
+
+  justify-content: center;
+  align-content: center;
+
+  padding: 5rem 0;
 }
 
 .section-lectures {
