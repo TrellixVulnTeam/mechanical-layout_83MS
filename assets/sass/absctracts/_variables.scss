@@ -1,7 +1,13 @@
 // Colors
 $primaryColor: #27348b;
 $secondaryColor: #81358a;
-$primaryGradient: linear-gradient(60deg, #81358a 0%, #27348b 100%);
+$primaryGradient: linear-gradient(
+  to right,
+  #81358a 0%,
+  #81358a 20%,
+  #27348b 100%,
+  #27348b 80%
+);
 
 $whiteColor: white;
 $blackColor: black;
@@ -12,4 +18,4 @@ $darkGrayColor: #464646;
 
 // fontdefaults
 $defaultFontSize: 1.6rem;
-$defaultFontFamily: 'Lato', sans-serif;
+$defaultFontFamily: "Lato", sans-serif;

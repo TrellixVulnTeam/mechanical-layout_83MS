@@ -1,41 +1,50 @@
 .section-herohome {
-    background-color: red; 
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
+  background-image: url("./../img/hero/hero-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // filter: blur(5rem);
+
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-.section-courses{
-    background-color: orange; 
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
+.section-courses {
+  background-color: orange;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
 }
 
-.section-lectures{
-    background-color: green; 
-    grid-row: 3 / 4;
-    grid-column: 1 / -1;
+.section-lectures {
+  background-color: green;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
 }
 
-.section-offer{
-    background-color: blue; 
-    grid-row: 4 / 5;
-    grid-column: 1 / -1;
+.section-offer {
+  background-color: blue;
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
 }
 
-.section-features{
-    background-color: pink; 
-    grid-row: 5 / 6;
-    grid-column: 1 / -1;
+.section-features {
+  background-color: pink;
+  grid-row: 5 / 6;
+  grid-column: 1 / -1;
 }
 
-.section-faq{
-    background-color: aqua; 
-    grid-row: 6 / 7;
-    grid-column: 1 / -1;
+.section-faq {
+  background-color: aqua;
+  grid-row: 6 / 7;
+  grid-column: 1 / -1;
 }
 
-.section-testimonals{
-    background-color: purple; 
-    grid-row: 7 / 8;
-    grid-column: 1 / -1;
+.section-testimonals {
+  background-color: purple;
+  grid-row: 7 / 8;
+  grid-column: 1 / -1;
 }
