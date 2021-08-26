@@ -26,22 +26,35 @@ body {
   font-weight: 800; }
 
 .heading__title {
-  font-size: 3rem;
-  color: white; }
-  .heading__title--pad {
-    padding-bottom: 4rem; }
-
-.heading__title-dark {
-  font-size: 3rem;
-  color: black; }
-  .heading__title-dark--pad {
-    padding-bottom: 3rem; }
+  font-size: 3rem; }
+  .heading__title--dark {
+    color: #464646; }
+  .heading__title--white {
+    color: white; }
 
 .heading__subtitle {
   font-size: 1.8rem;
   color: white;
   padding-top: 1rem;
   padding-bottom: 4rem; }
+
+.padd__lowpaddhoriz {
+  padding: 0 1rem; }
+
+.padd__medpaddhoriz {
+  padding: 0 4rem; }
+
+.padd__highpaddhoriz {
+  padding: 0 7rem; }
+
+.padd__lowpaddvert {
+  padding: 1rem 0; }
+
+.padd__medpaddvert {
+  padding: 4rem 0; }
+
+.padd__highpaddvert {
+  padding: 7rem 0; }
 
 .herohome {
   text-align: center;
@@ -111,7 +124,7 @@ body {
 .lecture {
   background-color: white;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.4rem;
+  border-radius: 0.7rem;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   backface-visibility: hidden; }
@@ -127,7 +140,8 @@ body {
   .lecture__details {
     padding: 1.5rem; }
   .lecture__heading {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem; }
   .lecture__time {
     font-size: 1.4rem;
     font-weight: 400;
@@ -158,8 +172,7 @@ body {
   grid-column: 1 / -1;
   display: grid;
   justify-content: center;
-  align-content: center;
-  padding: 5rem 0; }
+  align-content: center; }
 
 .section-offer {
   background-color: blue;

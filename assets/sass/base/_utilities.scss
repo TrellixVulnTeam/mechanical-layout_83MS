@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////// Margins
-.titlemarg {
+.marg {
   &__lowmarg {
   }
 
@@ -8,100 +8,27 @@
 
   &__highmarg {
   }
-  // Top
-  &__lowmargtop {
+
+  // Horizontal
+  &__lowmarghoriz {
   }
 
-  &__medmargtop {
+  &__medmarghoriz {
   }
 
-  &__highmargtop {
-  }
-  // Bottom
-  &__lowmargbott {
+  &__highmarghoriz {
   }
 
-  &__medmargbott {
+  // Vertical
+  &__lowpaddvert {
   }
 
-  &__highmargbott {
-  }
-  // left
-  &__lowmargleft {
+  &__medpaddvert {
   }
 
-  &__medmargleft {
+  &__highpaddvert {
   }
 
-  &__highmargleft {
-  }
-  // Right
-  &__lowmargright {
-  }
-
-  &__medmargright {
-  }
-
-  &__highmargright {
-  }
-}
-
-.subtitle {
-  &__lowmarg {
-  }
-
-  &__medmarg {
-  }
-
-  &__highmarg {
-  }
-  // Top
-  &__lowmargtop {
-  }
-
-  &__medmargtop {
-  }
-
-  &__highmargtop {
-  }
-  // Bottom
-  &__lowmargbott {
-  }
-
-  &__medmargbott {
-  }
-
-  &__highmargbott {
-  }
-  // left
-  &__lowmargleft {
-  }
-
-  &__medmargleft {
-  }
-
-  &__highmargleft {
-  }
-  // Right
-  &__lowmargright {
-  }
-
-  &__medmargright {
-  }
-
-  &__highmargright {
-  }
-}
-
-.text {
-  &__lowmarg {
-  }
-
-  &__medmarg {
-  }
-
-  &__highmarg {
-  }
   // Top
   &__lowmargtop {
   }
@@ -141,7 +68,7 @@
 }
 
 ////////////////////////////////////////////////////////////////////////// Paddings
-.titlepadd {
+.padd {
   &__lowpadd {
   }
 
@@ -150,6 +77,33 @@
 
   &__highpadd {
   }
+
+  // Horizontal
+  &__lowpaddhoriz {
+    padding: 0 1rem;
+  }
+
+  &__medpaddhoriz {
+    padding: 0 4rem;
+  }
+
+  &__highpaddhoriz {
+    padding: 0 7rem;
+  }
+
+  // Vertical
+  &__lowpaddvert {
+    padding: 1rem 0;
+  }
+
+  &__medpaddvert {
+    padding: 4rem 0;
+  }
+
+  &__highpaddvert {
+    padding: 7rem 0;
+  }
+
   // Top
   &__lowpaddtop {
   }
@@ -161,106 +115,15 @@
   }
   // Bottom
   &__lowpaddbott {
+    padding-bottom: 1rem;
   }
 
   &__medpaddbott {
+    padding-bottom: 4rem;
   }
 
   &__highpaddbott {
-  }
-  // left
-  &__lowpaddleft {
-  }
-
-  &__medpaddleft {
-  }
-
-  &__highpaddleft {
-  }
-  // Right
-  &__lowpaddright {
-  }
-
-  &__medpaddright {
-  }
-
-  &__highpaddright {
-  }
-}
-
-.subtitlepadd {
-  &__lowpadd {
-  }
-
-  &__medpadd {
-  }
-
-  &__highpadd {
-  }
-  // Top
-  &__lowpaddtop {
-  }
-
-  &__medpaddtop {
-  }
-
-  &__highpaddtop {
-  }
-  // Bottom
-  &__lowpaddbott {
-  }
-
-  &__medpaddbott {
-  }
-
-  &__highpaddbott {
-  }
-  // left
-  &__lowpaddleft {
-  }
-
-  &__medpaddleft {
-  }
-
-  &__highpaddleft {
-  }
-  // Right
-  &__lowpaddright {
-  }
-
-  &__medpaddright {
-  }
-
-  &__highpaddright {
-  }
-}
-
-.textpadd {
-  &__lowpadd {
-  }
-
-  &__medpadd {
-  }
-
-  &__highpadd {
-  }
-  // Top
-  &__lowpaddtop {
-  }
-
-  &__medpaddtop {
-  }
-
-  &__highpaddtop {
-  }
-  // Bottom
-  &__lowpaddbott {
-  }
-
-  &__medpaddbott {
-  }
-
-  &__highpaddbott {
+    padding-bottom: 7rem;
   }
   // left
   &__lowpaddleft {

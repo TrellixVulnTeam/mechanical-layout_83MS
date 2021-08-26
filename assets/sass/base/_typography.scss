@@ -10,19 +10,13 @@
 
   &__title {
     font-size: 3rem;
-    color: $whiteColor;
 
-    &--pad {
-      padding-bottom: 4rem;
+    &--dark {
+      color: $darkGrayColor;
     }
-  }
 
-  &__title-dark {
-    font-size: 3rem;
-    color: $blackColor;
-
-    &--pad {
-      padding-bottom: 3rem;
+    &--white {
+      color: $whiteColor;
     }
   }
 
