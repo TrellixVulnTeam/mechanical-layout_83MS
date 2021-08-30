@@ -59,6 +59,10 @@
   background-color: aqua;
   grid-row: 6 / 7;
   grid-column: 1 / -1;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .section-testimonals {
