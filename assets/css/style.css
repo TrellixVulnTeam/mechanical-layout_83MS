@@ -33,10 +33,83 @@ body {
     color: white; }
 
 .heading__subtitle {
-  font-size: 1.8rem;
-  color: white;
-  padding-top: 1rem;
-  padding-bottom: 4rem; }
+  font-size: 1.6rem; }
+  .heading__subtitle--dark {
+    color: #464646; }
+  .heading__subtitle--white {
+    color: white; }
+
+.marg__lowmarg {
+  margin: 1rem; }
+
+.marg__medmarg {
+  margin: 4rem; }
+
+.marg__highmarg {
+  margin: 7rem; }
+
+.marg__lowmarghoriz {
+  margin: 0 1rem; }
+
+.marg__medmarghoriz {
+  margin: 0 4rem; }
+
+.marg__highmarghoriz {
+  margin: 0 7rem; }
+
+.marg__lowpaddvert {
+  margin: 1rem 0; }
+
+.marg__medpaddvert {
+  margin: 4rem 0; }
+
+.marg__highpaddvert {
+  margin: 7rem 0; }
+
+.marg__lowmargtop {
+  margin-top: 1rem; }
+
+.marg__medmargtop {
+  margin-top: 4rem; }
+
+.marg__highmargtop {
+  margin-top: 7rem; }
+
+.marg__lowmargbott {
+  margin-bottom: 1rem; }
+
+.marg__medmargbott {
+  margin-bottom: 4rem; }
+
+.marg__highmargbott {
+  margin-bottom: 7rem; }
+
+.marg__lowmargleft {
+  margin-left: 1rem; }
+
+.marg__medmargleft {
+  margin-left: 4rem; }
+
+.marg__highmargleft {
+  margin-left: 7rem; }
+
+.marg__lowmargright {
+  margin-right: 1rem; }
+
+.marg__medmargright {
+  margin-right: 4rem; }
+
+.marg__highmargright {
+  margin-right: 7rem; }
+
+.padd__lowpadd {
+  padding: 1rem; }
+
+.padd__medpadd {
+  padding: 4rem; }
+
+.padd__highpadd {
+  padding: 7rem; }
 
 .padd__lowpaddhoriz {
   padding: 0 1rem; }
@@ -73,6 +146,24 @@ body {
 
 .padd__highpaddbott {
   padding-bottom: 7rem; }
+
+.padd__lowpaddleft {
+  padding-left: 1rem; }
+
+.padd__medpaddleft {
+  padding-left: 4rem; }
+
+.padd__highpaddleft {
+  padding-left: 7rem; }
+
+.padd__lowpaddright {
+  padding-right: 1rem; }
+
+.padd__medpaddright {
+  padding-right: 4rem; }
+
+.padd__highpaddright {
+  padding-right: 7rem; }
 
 .herohome {
   text-align: center;
@@ -165,6 +256,54 @@ body {
     font-weight: 400;
     color: gray; }
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 26.2rem));
+  gap: 2rem; }
+
+.feature {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content, 1fr;
+  justify-content: center; }
+  .feature__icon {
+    grid-row: 1 / -1;
+    background: linear-gradient(to right, #81358a 0%, #81358a 20%, #27348b 100%, #27348b 80%);
+    border-radius: 5rem;
+    fill: white;
+    height: 6rem;
+    width: 6rem;
+    padding: 1.5rem; }
+  .feature__title {
+    align-self: end;
+    grid-column: 2/ 3;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .feature__desc {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400; }
+
+.button-cta {
+  background-image: linear-gradient(to right, #81358a 0%, #81358a 20%, #27348b 100%, #27348b 80%);
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.5rem rgba(45, 54, 65, 0.75);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer; }
+  .button-cta:hover {
+    background-position: 100% 0;
+    transform: translateY(0.2rem);
+    transition: all 0.4s ease-in-out; }
+  .button-cta:focus {
+    outline: none; }
+
 .section-herohome {
   background-image: url("./../img/hero/hero-sky.jpg");
   background-size: cover;
@@ -195,12 +334,15 @@ body {
 .section-offer {
   background-color: blue;
   grid-row: 4 / 5;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  justify-items: center; }
 
 .section-features {
-  background-color: pink;
   grid-row: 5 / 6;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  justify-content: center; }
 
 .section-faq {
   background-color: aqua;

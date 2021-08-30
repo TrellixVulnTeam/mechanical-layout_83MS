@@ -41,12 +41,18 @@
   background-color: blue;
   grid-row: 4 / 5;
   grid-column: 1 / -1;
+
+  display: grid;
+  justify-items: center;
 }
 
 .section-features {
-  background-color: pink;
+  // background-color: pink;
   grid-row: 5 / 6;
   grid-column: 1 / -1;
+
+  display: grid;
+  justify-content: center;
 }
 
 .section-faq {

@@ -21,9 +21,17 @@
   }
 
   &__subtitle {
-    font-size: 1.8rem;
-    color: $whiteColor;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    font-size: 1.6rem;
+
+    // padding-top: 1rem;
+    // padding-bottom: 4rem;
+
+    &--dark {
+      color: $darkGrayColor;
+    }
+
+    &--white {
+      color: $whiteColor;
+    }
   }
 }

@@ -1,81 +1,105 @@
 ////////////////////////////////////////////////////////////////////////// Margins
 .marg {
   &__lowmarg {
+    margin: 1rem;
   }
 
   &__medmarg {
+    margin: 4rem;
   }
 
   &__highmarg {
+    margin: 7rem;
   }
 
   // Horizontal
   &__lowmarghoriz {
+    margin: 0 1rem;
   }
 
   &__medmarghoriz {
+    margin: 0 4rem;
   }
 
   &__highmarghoriz {
+    margin: 0 7rem;
   }
 
   // Vertical
   &__lowpaddvert {
+    margin: 1rem 0;
   }
 
   &__medpaddvert {
+    margin: 4rem 0;
   }
 
   &__highpaddvert {
+    margin: 7rem 0;
   }
 
   // Top
   &__lowmargtop {
+    margin-top: 1rem;
   }
 
   &__medmargtop {
+    margin-top: 4rem;
   }
 
   &__highmargtop {
+    margin-top: 7rem;
   }
   // Bottom
   &__lowmargbott {
+    margin-bottom: 1rem;
   }
 
   &__medmargbott {
+    margin-bottom: 4rem;
   }
 
   &__highmargbott {
+    margin-bottom: 7rem;
   }
   // left
   &__lowmargleft {
+    margin-left: 1rem;
   }
 
   &__medmargleft {
+    margin-left: 4rem;
   }
 
   &__highmargleft {
+    margin-left: 7rem;
   }
   // Right
   &__lowmargright {
+    margin-right: 1rem;
   }
 
   &__medmargright {
+    margin-right: 4rem;
   }
 
   &__highmargright {
+    margin-right: 7rem;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////// Paddings
 .padd {
   &__lowpadd {
+    padding: 1rem;
   }
 
   &__medpadd {
+    padding: 4rem;
   }
 
   &__highpadd {
+    padding: 7rem;
   }
 
   // Horizontal
@@ -130,20 +154,26 @@
   }
   // left
   &__lowpaddleft {
+    padding-left: 1rem;
   }
 
   &__medpaddleft {
+    padding-left: 4rem;
   }
 
   &__highpaddleft {
+    padding-left: 7rem;
   }
   // Right
   &__lowpaddright {
+    padding-right: 1rem;
   }
 
   &__medpaddright {
+    padding-right: 4rem;
   }
 
   &__highpaddright {
+    padding-right: 7rem;
   }
 }

@@ -1,0 +1,25 @@
+.button-cta {
+  //   text-align: center;
+  background-image: $primaryGradient;
+  padding: 2rem 3rem;
+  font-size: $defaultFontSize;
+  color: $whiteColor;
+  font-weight: 500;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.5rem rgba(45, 54, 65, 0.75);
+  // transform: translateX(1);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-position: 100% 0;
+    transform: translateY(0.2rem);
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
