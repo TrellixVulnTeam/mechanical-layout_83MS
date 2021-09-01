@@ -5,8 +5,12 @@
     margin: 1rem 0;
     padding: 2rem;
   }
-}
 
-.hidden {
-  display: none;
+  &__answer {
+    display: none;
+  }
+
+  &__answeropen {
+    display: block;
+  }
 }
