@@ -6,8 +6,3 @@ for (let i = 0; i < accordionQuestion.length; i++) {
     accordionAnswer[i].classList.toggle("faq__answeropen");
   });
 }
-
-// accordionQuestion.addEventListener("click", function () {
-//   let par = this.parentNode;
-//   console.log(par);
-// });
