@@ -14,3 +14,7 @@ for (let i = 0; i < accordionQuestion.length; i++) {
     }
   });
 }
+
+document.querySelector(".section-faq").addEventListener("click", function () {
+  accordionAnswer[i].classList.remove("faq__answeropen");
+});
