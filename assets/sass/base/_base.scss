@@ -21,3 +21,9 @@ body {
   grid-template-rows: 60vh max-content repeat(5, min-content);
   grid-template-columns: repeat(8, 1fr);
 }
+
+.container-course {
+  display: grid;
+  grid-template-rows: 80vh repeat(8, min-content);
+  grid-template-columns: repeat(8, 1fr);
+}

@@ -8,15 +8,16 @@
 
 // Layout Elements
 @import "./layout/header";
-@import "./layout/herohome";
 @import "./layout/footer";
 
-// Layout Elements
-@import "./components/course";
-@import "./components/lecture";
-@import "./components/feature";
-@import "./components/button";
-@import "./components/faq";
+// Componn=ents Elements
+@import "./components/hero";
+@import "./components/classes";
+@import "./components/courses";
+@import "./components/lectures";
+@import "./components/features";
+@import "./components/buttons";
+@import "./components/faqs";
 
 // Pages
 @import "./pages/homepage";

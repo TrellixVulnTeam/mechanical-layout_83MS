@@ -1,0 +1,34 @@
+.faqs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 56.4rem));
+  column-gap: 2rem;
+
+  // justify-content: stretch;
+}
+
+.faq {
+  // display: flex;
+  cursor: pointer;
+
+  &__question {
+    justify-content: stretch;
+    background-color: #ffffff;
+    padding: 2rem;
+  }
+
+  &__answer {
+    // display: none;
+    overflow: hidden;
+    transform: translateY(-1rem);
+    transform: translateY(-4rem);
+    // transform: translateY(-4rem);
+    // margin: 1rem 0;
+    // padding-left: 2rem;
+  }
+
+  &__answeropen {
+    transform: translateY(1rem);
+    // display: block;
+    // overflow: visible;
+  }
+}
