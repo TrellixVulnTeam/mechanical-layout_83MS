@@ -19,8 +19,9 @@ body {
   grid-template-columns: repeat(8, 1fr); }
 
 .container-course {
+  background-color: black;
   display: grid;
-  grid-template-rows: 80vh repeat(8, min-content);
+  grid-template-rows: 80vh max-content repeat(7, min-content);
   grid-template-columns: repeat(8, 1fr); }
 
 .titles {
@@ -198,6 +199,52 @@ body {
       transition: all 0.4s ease-in-out; }
     .hero__cta:focus {
       outline: none; }
+
+.classes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 112rem)); }
+
+.class {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 2fr 1fr;
+  justify-content: center; }
+  .class__video {
+    color: #dfdfdf; }
+  .class__lectures {
+    grid-column: 2 / 3;
+    margin-left: 0.5rem; }
+    .class__lectures h4 {
+      color: white;
+      padding-bottom: 1rem; }
+  .class__list {
+    text-decoration: none;
+    list-style: none;
+    overflow-y: scroll;
+    height: 34.4rem; }
+  .class__item {
+    width: 100%;
+    background: #191d21;
+    color: #dfdfdf;
+    padding: 1.05rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer; }
+
+.video {
+  width: 100%;
+  height: auto; }
+
+.about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: white; }
+  .about__icon {
+    fill: white;
+    height: 3rem;
+    width: 3rem; }
 
 .courses {
   display: grid;
@@ -381,7 +428,7 @@ body {
   grid-column: 1 / -1; }
 
 .section-hero-course {
-  background-image: url("./../img/hero/hero-sky.jpg");
+  background-image: url("./../img/hero/single.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -391,8 +438,7 @@ body {
   justify-content: center;
   align-content: center; }
 
-.section-class-course {
-  background: linear-gradient(to right, #81358a 0%, #81358a 20%, #27348b 100%, #27348b 80%);
+.section-classes-course {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;

@@ -23,7 +23,8 @@ body {
 }
 
 .container-course {
+  background-color: $blackColor;
   display: grid;
-  grid-template-rows: 80vh repeat(8, min-content);
+  grid-template-rows: 80vh max-content repeat(7, min-content);
   grid-template-columns: repeat(8, 1fr);
 }

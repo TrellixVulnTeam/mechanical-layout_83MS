@@ -1,0 +1,62 @@
+.classes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 112rem));
+}
+
+.class {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 2fr 1fr;
+
+  justify-content: center;
+  //   align-items: center;
+
+  &__video {
+    color: $lightGrayColor;
+  }
+
+  &__lectures {
+    grid-column: 2 / 3;
+    margin-left: 0.5rem;
+    h4 {
+      color: white;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__list {
+    text-decoration: none;
+    list-style: none;
+    overflow-y: scroll;
+    height: 34.4rem;
+  }
+
+  &__item {
+    width: 100%;
+    background: $hardGrayColor;
+    color: $lightGrayColor;
+    padding: 1.05rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+  }
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: white;
+
+  &__icon {
+    fill: white;
+    height: 3rem;
+    width: 3rem;
+  }
+}

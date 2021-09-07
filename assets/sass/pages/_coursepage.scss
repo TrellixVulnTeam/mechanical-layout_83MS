@@ -1,5 +1,5 @@
 .section-hero-course {
-  background-image: url("./../img/hero/hero-sky.jpg");
+  background-image: url("./../img/hero/single.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,13 +14,11 @@
   align-content: center;
 }
 
-.section-class-course {
-  background: $primaryGradient;
+.section-classes-course {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 
   display: grid;
-
   justify-content: center;
   align-content: center;
 }
